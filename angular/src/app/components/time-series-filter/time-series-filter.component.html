@@ -1,0 +1,21 @@
+<div class="row time-series-filter">
+    <div class="col-sm-12 col-md-6">
+        <div class="input-group p-1">
+            <div class="input-group-prepend">
+                <div class="input-group-text">Sensor Name</div>
+            </div>
+            <input type="text" class="form-control" title="Sensor Name" #sensorName/>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 text-right">
+        <div class="btn-group p-1" role="group">
+            <button type="button"
+                    class="btn btn-primary"
+                    *ngFor="let groupBy of groupBys"
+                    [title]="groupBy"
+                    (click)="setGroupBy(groupBy)">
+                {{groupBy | uppercase}}
+            </button>
+        </div>
+    </div>
+</div>

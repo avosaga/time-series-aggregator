@@ -1,0 +1,35 @@
+<div class="time-series-form">
+    <h3>New Time Series</h3>
+    <form name="timeSeries" #timeSeriesForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="form-group">
+            <label for="sensorName">Sensor Name</label>
+            <input type="text"
+                   class="form-control"
+                   id="sensorName"
+                   placeholder="Enter Sensor Name"
+                   ngModel
+                   name="sensorName"
+                   required />
+        </div>
+        <div class="form-group">
+            <label for="sensorValue">Sensor Value</label>
+            <input type="number"
+                   class="form-control"
+                   id="sensorValue"
+                   ngModel
+                   name="sensorValue"
+                   placeholder="Enter Sensor Value"
+                   required />
+        </div>
+        <div class="form-group">
+            <label for="timestamp">Sensor Value</label>
+            <input type="datetime-local"
+                   class="form-control"
+                   id="timestamp"
+                   ngModel
+                   name="timestamp"
+                   placeholder="Enter Timestamp" />
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!timeSeriesForm.valid">Save</button>
+    </form>
+</div>

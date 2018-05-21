@@ -1,0 +1,11 @@
+.time-series-form {
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: .1rem cornflowerblue solid;
+    background: white;
+}
+
+input.ng-invalid.ng-touched {
+    border: .1rem solid lightcoral;
+}

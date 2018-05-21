@@ -1,0 +1,21 @@
+.time-series-list {
+    height: 40rem;
+    overflow-y: auto;
+    background: white;
+    border-radius: 2rem;
+    border: .1rem #66b2ff solid;
+}
+
+.time-series-list__detail {
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    border: .1rem #66b2ff solid;
+    overflow-x: auto;
+}
+
+.time-series-list__group-by {
+    color: #0080ff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
