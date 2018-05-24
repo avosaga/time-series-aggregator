@@ -2,7 +2,7 @@
 
 Below you will find some information on how to run the app.<br>
 
-You need to have Java 8+ and NodeJS 9+ installed locally
+You need to have Java 8+, Gradle 4.x, NodeJS 9+ and Angular Cli installed locally
 
 ### `./gradlew assemble bootRun`
 
